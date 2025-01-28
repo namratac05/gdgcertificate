@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Facts about UI/UX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #e2e2e2;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Top 10 Facts about UI/UX Design</h1>
+        <ul id="facts-list"></ul>
+    </div>
+    <script>
+        const facts = [
+            "User-Centered Design: UI/UX design focuses on understanding the needs, behaviors, and motivations of users.",
+            "Difference Between UI and UX: UI refers to the visual elements of a product, while UX encompasses the overall experience.",
+            "Importance of Usability: A key aspect of UX design is usability, which measures how easy and intuitive a product is to use.",
+            "Prototyping and Testing: UI/UX designers often create prototypes to test their designs before full implementation.",
+            "Responsive Design: UI/UX designers must ensure that applications and websites work seamlessly across various screen sizes.",
+            "Emotional Design: Good UI/UX design considers the emotional response of users.",
+            "Accessibility: Designing for accessibility ensures that products can be used by people with disabilities.",
+            "Consistency is Key: Consistent design elements help users navigate and understand a product more easily.",
+            "Data-Driven Decisions: UI/UX designers often rely on analytics and user feedback to inform their design choices.",
+            "Collaboration with Other Teams: UI/UX designers often work closely with developers, product managers, and marketing teams."
+        ];
+
+        const factsList = document.getElementById('facts-list');
+
+        facts.forEach(fact => {
+            const li = document.createElement('li');
+            li.textContent = fact;
+            factsList.appendChild(li);
+        });
+    </script>
+</body>
+</html>
